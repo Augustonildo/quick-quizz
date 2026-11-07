@@ -1,1 +1,132 @@
-[]
+[
+  {
+    "id": "itaipu-001",
+    "category": "Usina Hidrelétrica de Itaipu",
+    "question": "Por que a Usina de Itaipu é considerada binacional?",
+    "options": [
+      "Porque ela é administrada conjuntamente pelo Brasil e pelo Paraguai.",
+      "Porque ela foi construída bem no meio do Oceano Atlântico.",
+      "Porque funciona apenas com energia solar e eólica.",
+      "Porque pertence aos Estados Unidos e ao Japão."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Itaipu é binacional porque Brasil e Paraguai compartilham sua administração."
+  },
+  {
+    "id": "itaipu-002",
+    "category": "Usina Hidrelétrica de Itaipu",
+    "question": "Qual é o nome do rio onde a Usina de Itaipu foi construída?",
+    "options": [
+      "Rio Amazonas.",
+      "Rio São Francisco.",
+      "Rio Paraná.",
+      "Rio Tietê."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A Usina de Itaipu foi construída no Rio Paraná, na fronteira entre Brasil e Paraguai."
+  },
+  {
+    "id": "itaipu-003",
+    "category": "Usina Hidrelétrica de Itaipu",
+    "question": "Para que serve a Usina Hidrelétrica de Itaipu?",
+    "options": [
+      "Para fabricar brinquedos e doces para as crianças.",
+      "Para filtrar a água salgada do mar e virar água doce.",
+      "Para gerar energia elétrica que ilumina cidades, escolas e hospitais.",
+      "Para guardar barcos submarinos de guerra."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A usina transforma a energia da água em energia elétrica, que pode ser utilizada em casas, escolas, hospitais e outros lugares."
+  },
+  {
+    "id": "itaipu-004",
+    "category": "Usina Hidrelétrica de Itaipu",
+    "question": "Quais são as principais vantagens da energia gerada por Itaipu?",
+    "options": [
+      "Ela usa carvão mineral e solta muita fumaça preta no céu.",
+      "A energia vem da força da água, não polui o ar e garante luz para as casas.",
+      "Ela funciona queimando lixo plástico das ruas.",
+      "Ela utiliza pilhas gigantes trocadas todos os dias."
+    ],
+    "correctAnswer": 1,
+    "explanation": "A energia hidrelétrica aproveita a força da água e não produz fumaça nem poluentes atmosféricos durante a geração de eletricidade."
+  },
+  {
+    "id": "itaipu-005",
+    "category": "Usina Hidrelétrica de Itaipu",
+    "question": "Qual é a altura aproximada da barragem da Usina de Itaipu?",
+    "options": [
+      "10 metros (altura de uma casa pequena).",
+      "50 metros (altura de um prédio de 15 andares).",
+      "Quase 200 metros (altura de um prédio de cerca de 65 andares).",
+      "5.000 metros (altura de uma montanha de gelo)."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A alternativa indicada no quiz estima a altura da barragem em quase 200 metros."
+  },
+  {
+    "id": "paleo-006",
+    "category": "Sítio Paleontológico e Fósseis",
+    "question": "O que são fósseis?",
+    "options": [
+      "Pedras comuns pintadas por artistas antigos.",
+      "Restos ou vestígios preservados de seres vivos que viveram no passado da Terra.",
+      "Brinquedos de madeira perdidos na lama.",
+      "Ossos de animais que nasceram semana passada."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fósseis são restos ou sinais de seres vivos antigos preservados em rochas ou em outros materiais."
+  },
+  {
+    "id": "paleo-007",
+    "category": "Sítio Paleontológico e Fósseis",
+    "question": "Quais ferramentas os cientistas usam para fazer as escavações de fósseis?",
+    "options": [
+      "Pincéis delicados, espátulas, picaretas e lupas.",
+      "Tesouras sem ponta e cola colorida.",
+      "Mangueiras de incêndio e escovas de dente elétricas.",
+      "Vassouras de palha e aspiradores de pó gigantes."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Paleontólogos usam ferramentas como pincéis e espátulas para retirar sedimentos com cuidado e proteger os fósseis."
+  },
+  {
+    "id": "paleo-008",
+    "category": "Sítio Paleontológico e Fósseis",
+    "question": "Onde fica localizada a região com o importante sítio paleontológico no Sul do Brasil?",
+    "options": [
+      "No estado de São Paulo e no Rio de Janeiro.",
+      "Principalmente no estado do Rio Grande do Sul e em Santa Catarina.",
+      "Bem no meio da Floresta Amazônica.",
+      "Na praia de Copacabana."
+    ],
+    "correctAnswer": 1,
+    "explanation": "O Sul do Brasil, especialmente o Rio Grande do Sul e Santa Catarina, possui importantes registros paleontológicos."
+  },
+  {
+    "id": "paleo-009",
+    "category": "Sítio Paleontológico e Fósseis",
+    "question": "Qual é a importância do Sítio Paleontológico do Sul para a ciência do nosso país?",
+    "options": [
+      "Funciona como uma janela para o passado, mostrando a evolução da vida na Terra.",
+      "Serve apenas para encontrar tesouros de piratas escondidos.",
+      "Mostra como as cidades vão se parecer no futuro.",
+      "Ajuda a prever o tempo e a chuva do dia seguinte."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Os fósseis ajudam os cientistas a investigar como os seres vivos e os ambientes mudaram ao longo do tempo."
+  },
+  {
+    "id": "paleo-010",
+    "category": "Sítio Paleontológico e Fósseis",
+    "question": "Como trabalham os paleontólogos nas escavações?",
+    "options": [
+      "Usando tratores e escavadeiras pesadas para cavar tudo de uma vez.",
+      "Com muita paciência, removendo a rocha bem devagar para não quebrar os fósseis.",
+      "Jogando água quente para derreter a terra rápido.",
+      "Puxando os ossos com cordas e caminhões fortes."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Os paleontólogos escavam cuidadosamente e removem o material aos poucos para preservar os fósseis."
+  }
+]
