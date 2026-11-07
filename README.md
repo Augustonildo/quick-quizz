@@ -8,12 +8,13 @@ Quiz educativo estático, feito com HTML, CSS e JavaScript puro, preparado para 
 - `styles.css`: identidade visual inspirada em papel de passaporte, com cores do Paraná, de Santa Catarina e do Rio Grande do Sul.
 - `app.js`: carregamento das perguntas, navegação, pontuação e desbloqueio da recompensa.
 - `questions.json`: conteúdo do quiz.
-- `assets/passaporte-explorador.png`: imagem do passaporte usada na tela inicial e como recompensa.
+- `assets/passaporte-explorador.png`: imagem do passaporte usada na tela inicial.
 - `assets/carimbo-*.png`: carimbos ilustrados dos três estados.
+- `assets/marca-texto-explorador.png`: imagem única do prêmio exibido ao concluir o quiz com pelo menos 70% de acertos.
 
-## Recompensa do passaporte
+## Recompensa especial
 
-Ao acertar todas as perguntas da rodada (100% de aproveitamento), o quiz mantém o troféu e exibe também o Passaporte do Explorador do Sul, acompanhado dos três carimbos regionais. Se o participante escolher uma categoria específica, a recompensa é concedida ao acertar todas as perguntas daquela rodada.
+Ao acertar pelo menos 70% das perguntas da rodada (aproveitamento igual ou superior a 70%), o quiz mantém o troféu e exibe uma única imagem do prêmio. A mensagem orienta o participante: **“Solicite seu prêmio na estação!”**. Se o participante escolher uma categoria específica, a recompensa é concedida ao acertar pelo menos 70% das perguntas daquela rodada. O passaporte continua aparecendo na tela inicial como parte da identidade visual, mas não é mais apresentado como prêmio.
 
 ## Como cadastrar perguntas
 

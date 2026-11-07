@@ -303,7 +303,7 @@ h1, h2, p { margin-top: 0; }
 .final-score { margin: 7px 0 2px; color: var(--green); font-family: Georgia, "Times New Roman", serif; font-size: 58px; line-height: 1; }
 .score-percentage { color: var(--muted); font-size: 12px; }
 
-.passport-reward {
+.prize-reward {
   margin: 25px auto 25px;
   padding: 23px 20px 18px;
   overflow: hidden;
@@ -320,7 +320,7 @@ h1, h2, p { margin-top: 0; }
 .reward-kicker { margin: 0 0 6px; color: var(--green); font-size: 9px; font-weight: 950; letter-spacing: 1.8px; }
 .reward-heading h2 { max-width: 460px; margin: 0; color: var(--deep-green); font-family: Georgia, "Times New Roman", serif; font-size: clamp(22px, 3.8vw, 30px); line-height: 1.15; }
 .reward-description { max-width: 480px; margin: 12px auto 16px; color: #5e6e5e; font-size: 12px; line-height: 1.6; }
-.reward-passport-image { display: block; width: min(62%, 280px); height: auto; margin: 0 auto; border-radius: 7px; filter: drop-shadow(0 12px 11px rgba(45, 48, 32, .25)); }
+.reward-image { display: block; width: auto; max-width: min(100%, 250px); max-height: 420px; height: auto; margin: 0 auto; border: 1px solid rgba(86, 66, 37, .12); border-radius: 6px; filter: drop-shadow(0 12px 11px rgba(45, 48, 32, .25)); }
 .reward-stamps { max-width: 430px; margin: 10px auto 0; display: flex; align-items: center; justify-content: center; gap: 10px; }
 .reward-stamps img { width: min(24%, 95px); height: auto; object-fit: contain; }
 .result-actions { display: flex; flex-direction: column; gap: 10px; max-width: 300px; margin: 0 auto; }
@@ -382,14 +382,13 @@ h1, h2, p { margin-top: 0; }
   .score-so-far { text-align: right; }
   .question-counter { font-size: 8px; letter-spacing: .8px; }
   .result-screen { padding-top: 5px; }
-  .passport-reward { padding: 19px 12px 15px; }
+  .prize-reward { padding: 19px 12px 15px; }
   .reward-heading { gap: 6px; }
   .reward-sparkle { font-size: 17px; }
   .reward-kicker { font-size: 8px; }
   .reward-heading h2 { font-size: 22px; }
   .reward-description { font-size: 11px; }
-  .reward-passport-image { width: min(78%, 245px); }
-  .reward-stamps { gap: 3px; }
+  .reward-image { max-height: 360px; max-width: min(100%, 210px); }
 }
 
 @media (prefers-reduced-motion: reduce) {

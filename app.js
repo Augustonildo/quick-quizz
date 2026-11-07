@@ -28,7 +28,7 @@ const elements = {
   resultMessage: document.querySelector("#result-message"),
   finalScore: document.querySelector("#final-score"),
   scorePercentage: document.querySelector("#score-percentage"),
-  passportReward: document.querySelector("#passport-reward"),
+  prizeReward: document.querySelector("#prize-reward"),
   replayButton: document.querySelector("#replay-button"),
   homeButton: document.querySelector("#home-button"),
 };
@@ -144,7 +144,7 @@ function startQuiz() {
   currentQuestionIndex = 0;
   score = 0;
   hasAnswered = false;
-  elements.passportReward.hidden = true;
+  elements.prizeReward.hidden = true;
 
   showScreen("quiz");
   renderQuestion();
@@ -245,17 +245,18 @@ function showResults() {
   const total = quizQuestions.length;
   const percentage = Math.round((score / total) * 100);
   const perfectScore = score === total;
+  const qualifiesForReward = score / total >= 0.7;
 
   elements.finalScore.textContent = `${score}/${total}`;
   elements.scorePercentage.textContent = `${percentage}% de acertos`;
-  elements.passportReward.hidden = !perfectScore;
+  elements.prizeReward.hidden = !qualifiesForReward;
 
   if (perfectScore) {
     elements.resultTitle.textContent = "Expedição perfeita!";
-    elements.resultMessage.textContent = "Você acertou todas as perguntas! O Passaporte do Explorador do Sul é sua recompensa.";
-  } else if (percentage >= 70) {
+    elements.resultMessage.textContent = "Você acertou todas as perguntas! Solicite seu prêmio na estação!";
+  } else if (qualifiesForReward) {
     elements.resultTitle.textContent = "Que grande descoberta!";
-    elements.resultMessage.textContent = "Você mandou muito bem. Continue explorando e aprendendo!";
+    elements.resultMessage.textContent = "Você alcançou pelo menos 70% de acertos! Solicite seu prêmio na estação!";
   } else if (percentage >= 40) {
     elements.resultTitle.textContent = "Bom trabalho, explorador!";
     elements.resultMessage.textContent = "Você já descobriu bastante coisa. Que tal tentar mais uma vez?";
