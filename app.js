@@ -28,6 +28,7 @@ const elements = {
   resultMessage: document.querySelector("#result-message"),
   finalScore: document.querySelector("#final-score"),
   scorePercentage: document.querySelector("#score-percentage"),
+  passportReward: document.querySelector("#passport-reward"),
   replayButton: document.querySelector("#replay-button"),
   homeButton: document.querySelector("#home-button"),
 };
@@ -91,7 +92,7 @@ function validateQuestions(data) {
 async function loadQuestions() {
   elements.startButton.disabled = true;
   elements.categorySelect.disabled = true;
-  elements.loadingMessage.textContent = "Preparando sua expedição...";
+  elements.loadingMessage.textContent = "Preparando seu passaporte...";
   elements.loadError.hidden = true;
 
   try {
@@ -109,7 +110,7 @@ async function loadQuestions() {
     elements.startButton.disabled = false;
     elements.loadingMessage.textContent = `${allQuestions.length} pergunta(s) prontinha(s) para a aventura!`;
   } catch (error) {
-    elements.loadingMessage.textContent = "O quiz ainda não está pronto.";
+    elements.loadingMessage.textContent = "Seu passaporte ainda está sendo preparado.";
     elements.loadError.textContent = error.message;
     elements.loadError.hidden = false;
   }
@@ -143,6 +144,7 @@ function startQuiz() {
   currentQuestionIndex = 0;
   score = 0;
   hasAnswered = false;
+  elements.passportReward.hidden = true;
 
   showScreen("quiz");
   renderQuestion();
@@ -242,13 +244,15 @@ function goToNextQuestion() {
 function showResults() {
   const total = quizQuestions.length;
   const percentage = Math.round((score / total) * 100);
+  const perfectScore = score === total;
 
   elements.finalScore.textContent = `${score}/${total}`;
   elements.scorePercentage.textContent = `${percentage}% de acertos`;
+  elements.passportReward.hidden = !perfectScore;
 
-  if (percentage === 100) {
+  if (perfectScore) {
     elements.resultTitle.textContent = "Expedição perfeita!";
-    elements.resultMessage.textContent = "Você acertou tudo! Sua curiosidade está em nível de especialista.";
+    elements.resultMessage.textContent = "Você acertou todas as perguntas! O Passaporte do Explorador do Sul é sua recompensa.";
   } else if (percentage >= 70) {
     elements.resultTitle.textContent = "Que grande descoberta!";
     elements.resultMessage.textContent = "Você mandou muito bem. Continue explorando e aprendendo!";
