@@ -29,6 +29,7 @@ const elements = {
   finalScore: document.querySelector("#final-score"),
   scorePercentage: document.querySelector("#score-percentage"),
   prizeReward: document.querySelector("#prize-reward"),
+  prizeDescription: document.querySelector("#prize-description"),
   replayButton: document.querySelector("#replay-button"),
   homeButton: document.querySelector("#home-button"),
 };
@@ -250,6 +251,9 @@ function showResults() {
   elements.finalScore.textContent = `${score}/${total}`;
   elements.scorePercentage.textContent = `${percentage}% de acertos`;
   elements.prizeReward.hidden = !qualifiesForReward;
+  elements.prizeDescription.textContent = perfectScore
+    ? "Você acertou todas as perguntas desta expedição!"
+    : "Você alcançou pelo menos 70% de acertos nesta expedição!";
 
   if (perfectScore) {
     elements.resultTitle.textContent = "Expedição perfeita!";
